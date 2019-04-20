@@ -1,0 +1,3 @@
+<view class="btn-box {{size === 'small'?'small-size':'big-size'}}" style="background-color: {{bgColor}};" >
+  <slot></slot>
+</view>

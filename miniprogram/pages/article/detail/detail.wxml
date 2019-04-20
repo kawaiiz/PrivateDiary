@@ -1,0 +1,48 @@
+
+
+<view class="header add-position bg-main">
+  <image class="mood-img mood-happy-img" src="{{imageURL}}kx.png" wx:if="{{moodIndex===0&&moodShow}}"></image>
+  <image class="mood-img mood-free-img" src="{{imageURL}}kd.png" wx:elif="{{moodIndex===1&&moodShow}}"></image>
+  <image class="mood-img mood-anger-img" src="{{imageURL}}sq.png" wx:elif="{{moodIndex===2&&moodShow}}"></image>
+  <image class="mood-img mood-cool-img" src="{{imageURL}}dl.png" wx:elif="{{moodIndex===3&&moodShow}}"></image>
+  <image class="mood-img mood-depressed-img" src="{{imageURL}}js.png" wx:elif="{{moodIndex===4&&moodShow}}"></image>
+  <image class="mood-img mood-empty-img" src="{{imageURL}}yb.png" wx:elif="{{moodIndex===5&&moodShow}}"></image>
+  <view class="header-box add-position w-100">
+    <view class="bg bg-cover  pl-2 pr-2  {{bg?'bg-cover':''}} " style="{{bgStyle}}">
+      <my-nav>
+        <view slot="leftBtn" class="box box-row-start">
+          <navigator open-type="navigateBack">
+            <i-icon type="return" size="28" color="#fff"></i-icon>
+          </navigator>
+          <!--<i-icon type="return" size="28" color="#fff"></i-icon>-->
+        </view>
+        <view class="c-fff" slot="title">
+          {{pageTitle}}
+        </view>
+      </my-nav>
+    </view>
+    <view class="article-title f-64 c-fff pl-3 pt-4">
+      {{title}}
+    </view>
+  </view>
+</view>
+<view class="content-box" style="{{contentStyle}}">
+  <view wx:for="{{content}}" wx:key="{{index}}">
+    <block wx:if="{{item.type === 'image'}}">
+      <image class="article-image w-100" mode="widthFix" wx:for="{{item.value}}" wx:key="imageIndex" wx:for-item="imageItem" wx:for-index="imageIndex" src="{{imageItem}}" wx:if="{{index!==0||(index===0&&imageIndex!=0)}}" bindtap="seeImageList" data-src="{{imageItem}}">
+      </image>
+    </block>
+    <block wx:else>
+      <view class="article-text c-999 f-24">
+        {{item.value}}
+      </view>
+    </block>
+  </view>
+</view>
+<view class="xf-btn" wx:if="{{pageType!=='detail'}}">
+  <my-xf-btn>
+    <i-icon type="task" size="32" color="#fff" bindtap="upData"></i-icon>
+  </my-xf-btn>
+</view>
+
+

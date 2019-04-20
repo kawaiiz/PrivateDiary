@@ -1,0 +1,14 @@
+<!-- 该组件有三个值控制  imgList valueList是传给组件的数组  showUpImg是使用该组件的页面参数 用来控制组件出现 在onready时 再-->
+<view class='up-img add-position box box-row-start-wrap'>
+  <view class='img-block add-position mr-2 mb-2' wx:for="{{imgList}}" wx:key="{{index}}">
+    <image class='small-img add-position' src='{{baseURL + item.path}}' mode="aspectFill" data-index='{{index}}' catchtap='seeImg'></image>
+    <image  class="del-btn" data-index='{{index}}' src="{{imageURL}}up_img_close.png" catchtap='delImg'>×</image>
+    <view class='error-see' wx:if="{{item.error}}">
+      <i-icon type="prompt-fill" size="28" color="red" />
+    </view>
+  </view>
+  <view class='up-img-block box box-col-center mr-2 mb-2' bindtap='setImg'>
+    <image class="up-img-icon mb-1" src="{{imageURL}}img_add.png"></image>
+    <view class="up-img-text f-20 c-333">拍照/上传</view>
+  </view>
+</view>

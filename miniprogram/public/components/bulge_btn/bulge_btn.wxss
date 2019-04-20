@@ -1,0 +1,11 @@
+/* public/components/bulge_btn/bulge_btn.wxss */
+
+/* 提交按钮等  二级模块按钮基础样式 */
+
+.bulge-btn{
+  border-radius: 16rpx;
+  box-shadow:0 10rpx 20rpx 10rpx rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}

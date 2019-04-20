@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/article/list/list",
+    "pages/error/error",
+    "pages/user/user/user",
+    "pages/article/edit/edit",
+    "pages/article/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFD946",
+    "navigationBarTitleText": "私人日志",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#2475FB",
+    "backgroundColorTop": "#2475FB",
+    "backgroundColorBottom": "#ffffff",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/article/list/list",
+        "text": "列表",
+        "selectedIconPath": "public/img/article-1.png",
+        "iconPath": "public/img/article-2.png"
+      },
+      {
+        "pagePath": "pages/user/user/user",
+        "text": "我的",
+        "selectedIconPath": "public/img/user-1.png",
+        "iconPath": "public/img/user-2.png"
+      }
+    ],
+    "color": "#bbb",
+    "selectedColor": "#666",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "my-nav": "/public/components/navigator_bar/navigator_bar",
+    "my-up-img": "/public/components/up_img/up_img",
+    "my-xf-btn": "/public/components/xf_btn/xf_btn",
+    "my-bulge-btn": "/public/components/bulge_btn/bulge_btn",
+    "my-operation-btn-box": "/public/components/operation_btn_box/operation_btn_box",
+    "i-icon": "/public/plugIn/iview/icon/index"
+  },
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "writing"
+}

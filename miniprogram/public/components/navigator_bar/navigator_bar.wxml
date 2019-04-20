@@ -1,0 +1,13 @@
+<view style="{{bgColor?'background:'+bgColor:''}}">
+  <view class="status-bar" style="height: {{(statusBarHeight / pixelRate) + 'rpx'}}"></view>
+  <view class="capsule-line"
+        style="height: {{(capsuleHeight / pixelRate) + 'rpx'}};line-height: {{(capsuleHeight / pixelRate) + 'rpx'}}">
+    <view class="left-box">
+      <slot name="leftBtn"></slot>
+    </view>
+    <view class="content-box">
+      <slot name="title"></slot>
+    </view>
+    <view class="right-box"></view>
+  </view>
+</view>

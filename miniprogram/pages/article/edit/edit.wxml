@@ -1,0 +1,70 @@
+
+<view class="header bg-main pl-2 pr-2 add-position">
+  <image class="mood-img mood-happy-img" src="{{imageURL}}kx.png" wx:if="{{moodIndex===0}}"></image>
+  <image class="mood-img mood-free-img" src="{{imageURL}}kd.png" wx:elif="{{moodIndex===1}}"></image>
+  <image class="mood-img mood-anger-img" src="{{imageURL}}sq.png" wx:elif="{{moodIndex===2}}"></image>
+  <image class="mood-img mood-cool-img" src="{{imageURL}}dl.png" wx:elif="{{moodIndex===3}}"></image>
+  <image class="mood-img mood-depressed-img" src="{{imageURL}}js.png" wx:elif="{{moodIndex===4}}"></image>
+  <image class="mood-img mood-empty-img" src="{{imageURL}}yb.png" wx:elif="{{moodIndex===5}}"></image>
+  <view class="header-box add-position w-100">
+    <my-nav>
+      <view slot="leftBtn" class="box box-row-start">
+        <navigator open-type="navigateBack">
+          <i-icon type="return" size="28" color="#fff" bindtap="goBack"></i-icon>
+        </navigator>
+        <!--<i-icon type="return" size="28" color="#fff"></i-icon>-->
+      </view>
+      <view class="c-fff" slot="title">
+        writing...
+      </view>
+    </my-nav>
+    <view class="input-line">
+      <input class="input c-fff text-center" maxlength="16" type="text" placeholder="输入标题(16字以内)"
+             placeholder-class="f28 c-bbb" bindinput="setTitle" value="{{title}}"></input>
+    </view>
+    <view class="pt-3 pr-4 box box-row-end">
+      <picker class="picker-btn" range="{{moodList}}" range-key="name" bindchange="pickerChange" data-t="mood">
+        <view class="box box-row-end">
+          <view class="f-28">{{moodList[moodIndex].name}}</view>
+        </view>
+      </picker>
+    </view>
+    <view class="add-node-btn">
+      <picker range="{{addList}}" range-key="name" bindchange="pickerChange" data-t="add">
+        <my-xf-btn size="small">
+          <i-icon type="add" size="32" color="#fff"></i-icon>
+        </my-xf-btn>
+      </picker>
+    </view>
+  </view>
+</view>
+<!-- 输入区域 -->
+<view class="content">
+  <swiper class="swiper-edit w-100" bindchange="swiperChange" current="{{swiperCurrent}}">
+    <block class="w-100" wx:for="{{contentList}}" wx:key="{{index}}">
+      <swiper-item class="pt-2 pl-2 pr-2 w-100 swiper-item">
+        <block wx:if="{{item.type==='text'}}">
+          <textarea id="swiper-{{index}}" class="textarea w-100 f-24 mb-2" maxlength="300" placeholder="输入文字" value="{{item.value}}" bindinput="inputChange" data-index="{{index}}"></textarea>
+          <view class="textarea-num text-right f-24 c-999" hidden="{{item.value.length<250}}">{{item.value.length}}/300</view>
+        </block>
+        <block wx:else>
+          <my-up-img  id="swiper-{{index}}" bindsetImg="setImg" data-index="{{index}}" imgList="{{item.imgList}}"></my-up-img>
+        </block>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="pl-4 pr-4">
+  <view  class="mb-4">
+    <my-bulge-btn bgColor="#FFDA44"  bindtap="delNode">删除当前节点</my-bulge-btn>
+  </view>
+  <my-bulge-btn bindtap="seeView">查看预览</my-bulge-btn>
+</view>
+
+<view class="indicator-box box box-row-center-wrap w-100">
+  <view class="indicator f-36 text-center {{item.type === 'text'?'bg-main  c-fff':'bg-secondly c-666'}} {{index===swiperCurrent?'active':''}}"
+        wx:for="{{contentList}}"
+        wx:key="{{index}}" data-index="{{index}}" dex bindtap="setSwiper">{{item.type === 'text'?'文':'图'}}
+  </view>
+</view>
+

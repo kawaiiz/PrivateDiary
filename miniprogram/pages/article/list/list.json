@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "my-nav": "/public/components/navigator_bar/navigator_bar",
+    "my-xf-btn": "/public/components/xf_btn/xf_btn",
+    "my-operation-btn-box": "/public/components/operation_btn_box/operation_btn_box",
+    "i-icon": "/public/plugIn/iview/icon/index"
+  },
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": true
+}

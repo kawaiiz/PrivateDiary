@@ -1,0 +1,27 @@
+/* public/components/navigator_bar/navigator_bar.wxss */
+.status-bar,.capsule-line{
+  width: 100%;
+}
+
+.capsule-line{
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-box,.right-box{
+  width: 28%;
+  height: 100%;
+}
+
+.content-box{
+  width: 44%;
+  height: 100%;
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

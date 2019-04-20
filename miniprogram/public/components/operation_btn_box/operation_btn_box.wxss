@@ -1,0 +1,14 @@
+/* public/components/operation_btn_box/operation_btn_box.wxss */
+@import "/app.wxss";
+
+.operation_btn_box{
+  height: 128rpx;
+  padding: 0 32rpx;
+  border-top: 1rpx solid rgba(0,0,0,.12)
+}
+
+.btn{
+  padding: 8rpx;
+  height: 100%;
+  width: 33%;
+}

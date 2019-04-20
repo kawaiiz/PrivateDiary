@@ -1,0 +1,20 @@
+.btn-box{
+  padding: 8rpx;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 16rpx rgba(0,0,0,.4);
+}
+
+.small-size{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.big-size{
+  width: 112rpx;
+  height: 112rpx;
+}

@@ -1,0 +1,8 @@
+<view class='fixed'>
+  <!--type 1 登录  -->
+  <image class='error_img' src="../../public/img/{{t==1?'error.png':'login.png'}}"></image>
+  <!-- <view class='error_text'>页面已丢失</view> -->
+  <button class='btn' style='color:#fff;margin-top:30rpx;' bindtap="goBack" wx:if="{{t==1}}">返回上一页</button>
+  <button class='btn' style='color:#fff;margin-top:30rpx;' bindtap="login" wx:elif="{{t==2}}">点击登陆</button>
+
+</view>

@@ -1,0 +1,14 @@
+<view class="operation_btn_box box box-row-start">
+  <view class="btn box box-row-center mr-5" bindtap="setSign">
+    <i-icon type="collection_fill" size="20" color="{{sign===0?'#bbb':'#FFDA44'}}" istyle="transform:translateY(-4rpx)"></i-icon>
+    <view class="f-28 c-999 pl-1">标记</view>
+  </view>
+  <view data-url="/pages/article/edit/edit?id={{articleId}}&t=edit" bindtap="gotoEdit" class="btn box box-row-center mr-5">
+    <i-icon type="brush_fill" size="20" color="#bbb" istyle="transform:translateY(-4rpx)"></i-icon>
+    <view class="f-28 c-999 pl-1">修改</view>
+  </view>
+  <button class="btn box box-row-center" open-type="share">
+    <i-icon type="share_fill" size="20" color="#bbb" istyle="transform:translateY(-4rpx)"></i-icon>
+    <view class="f-28 c-999 pl-1">转发</view>
+  </button>
+</view>

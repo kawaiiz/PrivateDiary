@@ -1,0 +1,48 @@
+<view class="header bg-main pl-2 pr-2 add-position">
+  <my-nav>
+    <picker slot="leftBtn"  range="{{typeList}}" range-key="name" bindchange="setType" value="{{typeIndex}}">
+      <i-icon type="other" size="28" color="#fff" ></i-icon>
+    </picker>
+  </my-nav>
+  <picker value="{{requestData.month}}" mode="date" fields="month" end="{{todayMonth}}" bindchange="setMonth">
+    <view class="pt-5 c-fff f-80 text-center">{{requestData.month}}</view>
+  </picker>
+</view>
+<view class="content add-position">
+  <view wx:for="{{dataList}}" wx:key="{{index}}">
+    <view class="card card-1 box box-row-between mb-2" wx:if="{{item.cover_img}}">
+      <image class="card-1-img" src="{{item.cover_img}}" mode="aspectFill"></image>
+      <view class="card-content add-position">
+        <image class="card-mood" src="{{imageURL}}kx.png" wx:if="{{item.mood===0}}"></image>
+        <image class="card-mood" src="{{imageURL}}kd.png" wx:elif="{{item.mood===1}}"></image>
+        <image class="card-mood" src="{{imageURL}}sq.png" wx:elif="{{item.mood===2}}"></image>
+        <image class="card-mood" src="{{imageURL}}dl.png" wx:elif="{{item.mood===3}}"></image>
+        <image class="card-mood" src="{{imageURL}}js.png" wx:elif="{{item.mood===4}}"></image>
+        <image class="card-mood" src="{{imageURL}}yb.png" wx:elif="{{item.mood===5}}"></image>
+        <view class="card-text-box add-position box box-col-center-start" bindtap="gotoDetail" data-id="{{item._id}}">
+          <view class="card-title no-wrap f32 c-333 f-bold">{{item.title}}</view>
+          <!--<view class="card-text no-wrap f28 c-999">content</view>-->
+        </view>
+        <my-operation-btn-box sign="{{item.sign}}" articleId="{{item._id}}" index="{{index}}" bindsetSign="setSign" bindgotoEdit="gotoEdit"></my-operation-btn-box>
+      </view>
+    </view>
+    <view class="card card-2 mb-2 add-position" wx:else>
+      <image class="card-mood" src="{{imageURL}}kx.png" wx:if="{{item.mood===0}}"></image>
+      <image class="card-mood" src="{{imageURL}}kd.png" wx:elif="{{item.mood===1}}"></image>
+      <image class="card-mood" src="{{imageURL}}sq.png" wx:elif="{{item.mood===2}}"></image>
+      <image class="card-mood" src="{{imageURL}}dl.png" wx:elif="{{item.mood===3}}"></image>
+      <image class="card-mood" src="{{imageURL}}js.png" wx:elif="{{item.mood===4}}"></image>
+      <image class="card-mood" src="{{imageURL}}yb.png" wx:elif="{{item.mood===5}}"></image>
+      <view class="card-text-box add-position box box-col-center-start">
+        <view class="title no-wrap f32 c-333 f-bold">{{item.title}}</view>
+        <!--<view class="content no-wrap f28 c-999">content</view>-->
+      </view>
+      <my-operation-btn-box sign="{{item.sign}}" id="{{item._id}}" index="{{index}}" bindsetSign="setSign"></my-operation-btn-box>
+    </view>
+  </view>
+</view>
+<navigator url="/pages/article/edit/edit" class="xf-btn">
+  <my-xf-btn>
+    <i-icon type="add" size="32" color="#fff" ></i-icon>
+  </my-xf-btn>
+</navigator>

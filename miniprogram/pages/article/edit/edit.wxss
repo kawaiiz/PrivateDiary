@@ -1,0 +1,113 @@
+/* miniprogram/pages/article/edit/edit.wxss */
+page{
+  background-color: #f5f5f5;
+}
+
+.header{
+  position: sticky;
+  top:0;
+  left:0;
+  height: 320rpx;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,.4);
+}
+
+.header-box{
+  z-index: 2;
+  height: 100%;
+}
+
+
+.add-node-btn{
+  position: absolute;
+  bottom: -40rpx;
+  left: 32rpx
+}
+
+.content{
+  padding: 64rpx 16rpx 24rpx;
+}
+
+.swiper-edit{
+  height: 600rpx;
+  /*border-bottom: 1rpx solid rgba(0,0,0,.12);*/
+}
+
+.swiper-item{
+
+}
+
+.textarea{
+  height: 400rpx;
+  line-height: 1.5;
+}
+
+.indicator-box{
+  height: 72rpx;
+  position: fixed;
+  bottom: 30rpx;
+  left:0;
+}
+
+.indicator{
+  width: 56rpx;
+  height: 56rpx;
+  line-height: 54rpx;
+  transition: all .3s;
+}
+
+.indicator.active{
+  width: 72rpx;
+  height: 72rpx;
+  line-height: 70rpx;
+}
+
+
+/* 情绪框 */
+.mood-img{
+  position: absolute;
+  top: 15rpx;
+  right: 20rpx;
+  z-index: 1;
+  width: 240rpx;
+  height: 240rpx;
+}
+
+.picker-btn{
+  padding: 8rpx 16rpx;
+  background-color: rgba(117,179,255,.7);
+  color:rgba(255,255,255,.8);
+  border-radius: 16rpx;
+  box-shadow: 0 5rpx 5rpx 10rpx rgba(117,179,255,.3);
+}
+
+/*开心*/
+.mood-happy-img{
+
+}
+
+/*一般*/
+.mood-free-img{
+
+}
+
+/*生气*/
+.mood-anger-img{
+
+}
+
+/*感到寒冷*/
+.mood-cool-img{
+
+}
+
+/*心情低沉*/
+.mood-depressed-img{
+
+}
+
+/*无欲无求 空*/
+.mood-empty-img{
+
+}

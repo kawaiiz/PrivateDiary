@@ -1,0 +1,46 @@
+.header{
+  position: sticky;
+  top:0;
+  left:0;
+  height: 320rpx;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,.4);
+}
+
+.content{
+  padding: 24rpx 16rpx;
+  z-index: 1;
+}
+
+.card-1{
+  height: 320rpx;
+}
+
+.card-1-img{
+  width: 25%;
+  height: 100%;
+}
+
+.card-content{
+  width: 75%;
+}
+
+.card-text-box{
+  height: 192rpx;
+  padding: 0 32rpx;
+  z-index: 2;
+}
+
+.card-title,.card-text{
+  width: 100%;
+}
+
+
+.card-mood{
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute;
+  top: 16rpx;
+  right: 32rpx;
+}

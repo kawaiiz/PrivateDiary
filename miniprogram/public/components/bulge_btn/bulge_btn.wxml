@@ -1,0 +1,3 @@
+<view class="bulge-btn {{size === 'small'?'small-size':'big-size'}}" style="background-color: {{bgColor}};font-size: {{size}}rpx;"  bindtap="handleTap">
+  <slot></slot>
+</view>
