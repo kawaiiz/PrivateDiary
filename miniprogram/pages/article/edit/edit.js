@@ -14,7 +14,7 @@ Page({
     baseURL: app.globalData.baseURL,
     addList: [{type: 'text', name: '文本域'}, {type: 'image', name: '图片域'}],
     title:'',
-    contentList: [{type: 'image', value: [],imgList:[]}, {type: 'text', value: ''}, {type: 'image', value: [],imgList:[]}],
+    contentList: [{type: 'image', value: []}, {type: 'text', value: ''}, {type: 'image', value: []}],
     swiperCurrent: 0,
     moodList: [{id:0,name:'开心'},{id:1,name:'自在'},{id:2,name:'生气'},{id:3,name:'感到寒冷'},{id:4,name:'心情低沉'},{id:5,name:'也无风来也无晴'}],
     moodIndex: 0,
@@ -55,7 +55,6 @@ Page({
     }else if(t === 'mood'){
       this.setMood(v)
     }
-    console.log(e)
   },
   //设置月份
   setMood(v) {
@@ -76,12 +75,12 @@ Page({
       }
     }else {
       tag = {
-        type: 'text',
-        value:[],
-        imgList:[]
+        type: 'image',
+        value:[]
       }
     }
     contentList.splice(swiperCurrent + 1, 0, tag)
+    contentList = this.setImageList(contentList)
     this.setData({
       contentList,
       swiperCurrent:swiperCurrent+1
@@ -100,6 +99,7 @@ Page({
         success: res=>{
           if (res.confirm) {
             contentList.splice(swiperCurrent, 1)
+            contentList = this.setImageList(contentList)
             this.setData({
               contentList
             })
@@ -119,10 +119,41 @@ Page({
   setImg(e) {
     console.log(e)
     let index = e.currentTarget.dataset.index
-    let str = `contentList.[${index}].value`
+    let strValue = `contentList.[${index}].value`
     this.setData({
-      [str]: e.detail.imgList
+      [strValue]: e.detail.imageList
     })
+  },
+
+  setImageList(list){
+
+    return list.map(item1=>{
+      if(item1.type === 'image'){
+        item1.imageList = []
+        item1.value.map(item2=>{
+          item1.imageList.push({
+            path: item2
+          })
+        })
+      }
+      return item1
+    })
+  },
+  //如果是修改则需要初始化页面
+  initPage(){
+    db.collection('article').doc(this.data.id).get()
+      .then(res=>{
+        console.log(res)
+        let data = res.data
+        let content = data.content
+        content = this.setImageList(content)
+        this.setData({
+          detail:data,
+          title:data.title,
+          contentList:content,
+          moodIndex:data.mood
+        })
+      })
   },
   // swiper切换
   swiperChange(e) {
@@ -136,32 +167,6 @@ Page({
     this.setData({
       swiperCurrent: index
     })
-  },
-  //如果是修改则需要初始化页面
-  initPage(){
-    db.collection('article').doc(this.data.id).get()
-      .then(res=>{
-        console.log(res)
-        let data = res.data
-        let content = data.content
-        content = content.map(item=>{
-          if(item.type === 'image'){
-            item.imgList = item.value.map(item2=>{
-              return {
-                path:item2
-              }
-            })
-            console.log(item)
-          }
-          return item
-        })
-        this.setData({
-          detail:data,
-          title:data.title,
-          contentList:content,
-          moodIndex:data.mood
-        })
-      })
   },
   /**
    * 生命周期函数--监听页面加载

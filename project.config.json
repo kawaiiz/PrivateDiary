@@ -8,7 +8,7 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"appid": "wxef36527a70859617",
+	"appid": "wx3b5e11601c173532",
 	"projectname": "%E7%A7%81%E6%9C%89%E6%97%A5%E8%AE%B0",
 	"libVersion": "2.6.1",
 	"condition": {
@@ -28,7 +28,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -42,6 +42,13 @@
 					"name": "详情",
 					"pathName": "pages/article/detail/detail",
 					"query": "t=edit",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "使用说明",
+					"pathName": "pages/user/user/user",
+					"query": "",
 					"scene": null
 				}
 			]

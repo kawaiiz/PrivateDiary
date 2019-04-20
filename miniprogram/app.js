@@ -39,9 +39,8 @@ App({
     userInfo: {}, //用户信息
     token: '', //token
     transmit: {
-      title: '小程序模板',
-      path: '/pages/index/index',
-      imageUrl: http.imageURL + 'cover.jpg',
+      title: '辑言',
+      path: '',
       success: function(res) {
         util.toast('转发成功')
       },

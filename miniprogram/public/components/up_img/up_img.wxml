@@ -1,6 +1,6 @@
-<!-- 该组件有三个值控制  imgList valueList是传给组件的数组  showUpImg是使用该组件的页面参数 用来控制组件出现 在onready时 再-->
+<!-- 该组件有三个值控制  imageList valueList是传给组件的数组  showUpImg是使用该组件的页面参数 用来控制组件出现 在onready时 再-->
 <view class='up-img add-position box box-row-start-wrap'>
-  <view class='img-block add-position mr-2 mb-2' wx:for="{{imgList}}" wx:key="{{index}}">
+  <view class='img-block add-position mr-2 mb-2' wx:for="{{imageList}}" wx:key="{{index}}">
     <image class='small-img add-position' src='{{baseURL + item.path}}' mode="aspectFill" data-index='{{index}}' catchtap='seeImg'></image>
     <image  class="del-btn" data-index='{{index}}' src="{{imageURL}}up_img_close.png" catchtap='delImg'>×</image>
     <view class='error-see' wx:if="{{item.error}}">

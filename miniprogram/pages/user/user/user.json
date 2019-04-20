@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-nav": "/public/components/navigator_bar/navigator_bar",
+    "i-icon": "/public/plugIn/iview/icon/index"
+  },
+  "navigationBarTitleText": "使用说明"
 }

@@ -1,2 +1,23 @@
-<!--miniprogram/pages/user/user/user.wxml-->
-<text>miniprogram/pages/user/user/user.wxml</text>
+<my-nav>
+  <view class="c-fff" slot="title">
+    使用说明
+  </view>
+</my-nav>
+<view>
+  <view class="header f-32 c-main text-center f-bold pb-6">
+    辑言
+  </view>
+  <view class="content f-24 c-999 pl-4 pr-4">
+    <view class="pb-3 text-center f-28">
+      辑言产生的原因有两个。
+    </view>
+    <view class="pb-1 text">一、在生活中，有些忘记了的事情被重新回忆、头脑中突然迸发出的一点火花、想要告诉别人的一些事情等等情况发生的时候，我们想着有个地方快速记录会有多好。</view>
+    <view class="pb-4 text">二、最近在学习小程序的云开发，需要实践。</view>
+    <view class="pb-3 text-center f-28">添加记录</view>
+    <view class="pb-4 text">每一篇记录需要有标题，可以点击按钮选择心情，下方有一个图文列表，第一个图模块是封面图，点击添加按钮可以添加模块，当觉得模块不满意可以删除，如果想看看编写的如何，可以点击查看预览，进入预览页面，点击右下角的保存，即可将记录保存下来</view>
+    <view class="pb-3 text-center f-28"> 列表模块介绍</view>
+    <view class="pb-4 text">模块上的三个功能：标记、修改、转发。标记类似与点赞，可用于筛选记录。修改即修改记录内容。转发则是转发点击模块对应的记录给别人。</view>
+    <view class="pb-3 text-center f-28">列表筛选介绍</view>
+    <view class="text">点击左上角可以选择筛选显示全部记录或标记记录，点击年月可以选择年月，确定后可以筛选选择月份的记录。可以进行交叉搜索。</view>
+  </view>
+</view>

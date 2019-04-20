@@ -44,11 +44,11 @@
     <block class="w-100" wx:for="{{contentList}}" wx:key="{{index}}">
       <swiper-item class="pt-2 pl-2 pr-2 w-100 swiper-item">
         <block wx:if="{{item.type==='text'}}">
-          <textarea id="swiper-{{index}}" class="textarea w-100 f-24 mb-2" maxlength="300" placeholder="输入文字" value="{{item.value}}" bindinput="inputChange" data-index="{{index}}"></textarea>
+          <textarea id="swiper-{{index}}" class="textarea w-100 f-24 mb-2" style="color:red" maxlength="300" placeholder="输入文字" value="{{item.value}}" bindinput="inputChange" data-index="{{index}}"></textarea>
           <view class="textarea-num text-right f-24 c-999" hidden="{{item.value.length<250}}">{{item.value.length}}/300</view>
         </block>
         <block wx:else>
-          <my-up-img  id="swiper-{{index}}" bindsetImg="setImg" data-index="{{index}}" imgList="{{item.imgList}}"></my-up-img>
+          <my-up-img  id="swiper-{{index}}" bindsetImg="setImg" data-index="{{index}}" imageList="{{item.imageList}}"></my-up-img>
         </block>
       </swiper-item>
     </block>

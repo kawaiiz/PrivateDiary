@@ -11,7 +11,10 @@
     <view class="bg bg-cover  pl-2 pr-2  {{bg?'bg-cover':''}} " style="{{bgStyle}}">
       <my-nav>
         <view slot="leftBtn" class="box box-row-start">
-          <navigator open-type="navigateBack">
+          <navigator open-type="switchTab" url="/pages/article/list/list" wx:if="{{pageType==='share'}}">
+            <i-icon type="homepage" size="28" color="#fff"></i-icon>
+          </navigator>
+          <navigator open-type="navigateBack" wx:else>
             <i-icon type="return" size="28" color="#fff"></i-icon>
           </navigator>
           <!--<i-icon type="return" size="28" color="#fff"></i-icon>-->
@@ -39,10 +42,14 @@
     </block>
   </view>
 </view>
-<view class="xf-btn" wx:if="{{pageType!=='detail'}}">
+<view class="xf-btn" wx:if="{{pageType==='edit'||pageType==='add'}}">
   <my-xf-btn>
     <i-icon type="task" size="32" color="#fff" bindtap="upData"></i-icon>
   </my-xf-btn>
 </view>
-
+<view class="xf-btn" wx:if="{{pageType==='detail'}}">
+  <my-xf-btn>
+    <i-icon type="trash" size="32" color="#fff" bindtap="del"></i-icon>
+  </my-xf-btn>
+</view>
 

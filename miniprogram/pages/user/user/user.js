@@ -1,11 +1,16 @@
-// miniprogram/pages/user/user/user.js
+const db = wx.cloud.database()
+const app = getApp()
+const util = require('../../../public/utils/util.js');
+const http = require('../../../public/utils/http.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goto: '',// edit detail
+    imageURL: app.globalData.imageURL,
+    baseURL: app.globalData.baseURL,
   },
 
   /**

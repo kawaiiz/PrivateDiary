@@ -23,6 +23,29 @@ Page({
     disable: false,//控制提交
     moodShow: false
   },
+  //
+  del(){
+    wx.showModal({
+      title: '提示',
+      content: '是否删除当前记录（无法找回的真实删除）',
+      success: res=>{
+        if (res.confirm) {
+          db.collection('article').doc(this.data.id).remove().then(res=>{
+            var pages = getCurrentPages();
+            var prevPage = pages[pages.length - 2];//当前页面的上一个页面
+            prevPage.setData({
+              goto:'del'
+            })
+            util.toast('删除成功，即将返回列表',setTimeout(()=>{
+              wx.navigateBack({
+                delta: 1
+              })
+            },1500))
+          })
+        }
+      }
+    })
+  },
   upData() {
     if (this.data.disable) return false
     this.setData({

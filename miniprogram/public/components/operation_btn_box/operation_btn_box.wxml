@@ -7,7 +7,7 @@
     <i-icon type="brush_fill" size="20" color="#bbb" istyle="transform:translateY(-4rpx)"></i-icon>
     <view class="f-28 c-999 pl-1">修改</view>
   </view>
-  <button class="btn box box-row-center" open-type="share">
+  <button class="btn box box-row-center" open-type="share" data-id="{{articleId}}">
     <i-icon type="share_fill" size="20" color="#bbb" istyle="transform:translateY(-4rpx)"></i-icon>
     <view class="f-28 c-999 pl-1">转发</view>
   </button>

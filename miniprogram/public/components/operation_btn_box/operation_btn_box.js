@@ -31,7 +31,7 @@ Component({
   methods: {
     gotoEdit(e){
       let url = e.currentTarget.dataset.url
-      this.triggerEvent('setSign',{
+      this.triggerEvent('gotoEdit',{
         url
       });
     },
