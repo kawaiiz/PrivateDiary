@@ -3,32 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ee2a4110-e620-45cd-b9e3-3218580a8f22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/article/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/article/detail/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/article/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/article/detail/detail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/article/list/list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/user/user/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/user/user/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/user/user/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/user/user/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/user/user/user.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/user/user/user.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/pages/user/user/user.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/pages/user/user/user.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/china.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/ec-canvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/ec-canvas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/ec-canvas.wxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/ec-canvas.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/echarts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/map-option.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/ec-canvas/wx-canvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/qqMap/qqmap-wx-jssdk.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniprogram/public/plugIn/validate/WxValidate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,15 +17,24 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+                <state relative-caret-position="330">
+                  <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
                   <folding>
                     <element signature="n#my-nav#0;n#view#0;n#view#0;n#!!top" />
                     <element signature="n#style#0;n#textarea#0;n#block#0;n#swiper-item#0;n#block#0;n#swiper#0;n#view#1;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/miniprogram/public/utils/util.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="8" column="128" lean-forward="true" selection-start-line="8" selection-start-column="128" selection-end-line="8" selection-end-column="128" />
                 </state>
               </provider>
             </entry>
@@ -63,8 +46,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="572">
-                  <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+                <state relative-caret-position="616">
+                  <caret line="87" column="4" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
                   <folding>
                     <element signature="e#2055#2797#0" />
                     <element signature="e#2822#3005#0" />
@@ -78,7 +61,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="422">
+                <state relative-caret-position="924">
                   <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
                 </state>
               </provider>
@@ -259,14 +242,6 @@
               <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
               <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="article" type="462c0819:PsiDirectoryNode" />
-              <item name="edit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
-              <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,22 +249,7 @@
               <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
               <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
-              <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="up_img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
-              <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="plugIn" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -354,12 +314,21 @@
       <workItem from="1555638851512" duration="7038000" />
       <workItem from="1555656761333" duration="6426000" />
       <workItem from="1555732564165" duration="91000" />
-      <workItem from="1555734817147" duration="10357000" />
+      <workItem from="1555734817147" duration="10766000" />
+      <workItem from="1555895354624" duration="329000" />
     </task>
+    <task id="LOCAL-00001" summary="等待textarea bug修复再上线">
+      <created>1555745687180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555745687180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118613000" />
+    <option name="totallyTimeSpent" value="119351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -386,6 +355,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="等待textarea bug修复再上线" />
+    <option name="LAST_COMMIT_MESSAGE" value="等待textarea bug修复再上线" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/miniprogram/public/plugIn/iview/icon/custom.wxss" />
@@ -542,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniprogram/public/utils/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloudfunctions/list/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -695,15 +661,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
+        <state relative-caret-position="924">
           <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="87" column="4" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+          <folding>
+            <element signature="e#2055#2797#0" />
+            <element signature="e#2822#3005#0" />
+            <element signature="e#3028#3274#0" />
+            <element signature="e#3306#3671#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        <state relative-caret-position="330">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
           <folding>
             <element signature="n#my-nav#0;n#view#0;n#view#0;n#!!top" />
             <element signature="n#style#0;n#textarea#0;n#block#0;n#swiper-item#0;n#block#0;n#swiper#0;n#view#1;n#!!top" expanded="true" />
@@ -711,16 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js">
+    <entry file="file://$PROJECT_DIR$/miniprogram/public/utils/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
-          <folding>
-            <element signature="e#2055#2797#0" />
-            <element signature="e#2822#3005#0" />
-            <element signature="e#3028#3274#0" />
-            <element signature="e#3306#3671#0" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="8" column="128" lean-forward="true" selection-start-line="8" selection-start-column="128" selection-end-line="8" selection-end-column="128" />
         </state>
       </provider>
     </entry>
