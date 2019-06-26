@@ -35,5 +35,6 @@
     "selectedColor": "#666",
     "backgroundColor": "#FFFFFF",
     "borderStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap10.json"
 }

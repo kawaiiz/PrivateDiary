@@ -1,5 +1,5 @@
-/* public/components/up_imgup_img.wxss */
-@import '/public/css/common.wxss';
+/* public/components/up-img/up-img.wxss */
+@import '/app.wxss';
 
 .up-img {
   /* height: 210rpx; */
@@ -8,10 +8,10 @@
 }
 
 .up-img-block, .img-block {
-  width: 150rpx;
+  width: 145rpx;
   height: 120rpx;
-  font-size: 100rpx;
-  font-weight: 100;
+  /*font-size: 100rpx;*/
+  /*font-weight: 100;*/
   text-align: center;
   border-radius: 10rpx;
 }
@@ -36,6 +36,9 @@
 .del-btn {
   width: 30rpx;
   height: 30rpx;
+  background-color: #2475FB;
+  border-radius: 50%;
+  overflow: hidden;
   position: absolute;
   top: -5rpx;
   left: -5rpx;
