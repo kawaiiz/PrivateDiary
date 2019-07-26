@@ -4,10 +4,11 @@ const util = require('./public/utils/util.js')
 // 刘海屏适配
 let config = require('./public/components/navigator_bar/config.js');
 App({
-  onLaunch: function() {
+  onLaunch: function () {
     wx.cloud.init()
     //设置顶部导航
     this.setNavStyle()
+    this.globalData.recordTag = wx.getRecorderManager()
   },
   //设置顶部导航
   setNavStyle() {
@@ -41,10 +42,10 @@ App({
     transmit: {
       title: '辑言',
       path: '',
-      success: function(res) {
+      success: function (res) {
         util.toast('转发成功')
       },
-      fail: function(res) {
+      fail: function (res) {
         // util.toast('转发失败')
       }
     }

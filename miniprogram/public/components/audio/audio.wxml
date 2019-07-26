@@ -1,2 +1,19 @@
-<!--public/components/audio/audio.wxml-->
-<text>public/components/audio/audio.wxml</text>
+<!-- 该组件有三个值控制  audioList valueList是传给组件的数组  showUpAudio是使用该组件的页面参数 用来控制组件出现 在onready时 再 -->
+<view class='up-audio add-position box box-row-start-wrap'>
+  <view class='audio-block add-position mr-2 mb-2' wx:for="{{audioList}}" wx:key="{{index}}" bindtap="startAudio" data-index="{{index}}">
+    <view class="up-audio-block  box box-col-center add-position w-100 h-100">
+      <i-icon type="translation_fill" size="32" color="#2475fb" />
+      <view class="up-audio-text f-20 c-333">点击播放</view>
+    </view>
+    <view class="del-btn" data-index='{{index}}' catchtap='delAudio'>
+      <i-icon type="close" size="12" color="#fff" istyle="transform:translateY(-14rpx)" />
+    </view>
+    <view class='error-see' wx:if="{{item.error}}">
+      <i-icon type="prompt-fill" size="28" color="red" />
+    </view>
+  </view>
+  <view class='up-audio-block box box-col-center mr-2 mb-2' bindtap='startRecord' wx:if="{{audioList.length<maxLength}}">
+    <i-icon type="translation_fill" size="32" color="#999" />
+    <view class="up-audio-text f-20 c-333">录制</view>
+  </view>
+</view>
