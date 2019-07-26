@@ -47,6 +47,8 @@ Page({
   },
   // 加上标记
   setSign(e) {
+    console.log(e)
+    wx.showLoading()
     let data = e.detail
     db.collection('article').doc(data.id).update({
       // data 传入需要局部更新的数据
@@ -54,11 +56,13 @@ Page({
         sign: data.sign === 1 ? 0 : 1
       }
     }).then(res => {
+      wx.hideLoading()
       let str = `dataList[${data.index}].sign`
       this.setData({
         [str]: data.sign === 1 ? 0 : 1
       })
     }).catch(err => {
+      wx.hideLoading()
       console.log(err)
       util.toast('标记失败')
     })
@@ -100,6 +104,7 @@ Page({
   getList() {
     let requestData = this.data.requestData
     if (this.data.maxP < requestData.p) return false
+    wx.showLoading()
     this.setData({
       onLoading: true
     })
@@ -143,8 +148,10 @@ Page({
           })
           wx.stopPullDownRefresh()
         }
+        wx.hideLoading()
       })
       .catch(err => {
+        wx.hideLoading()
         console.log(err)
         this.setData(setData)
       })
@@ -232,12 +239,18 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function (e) {
+    
     this.setData({
       goto: 'share'
     })
+    
     let transmit = app.globalData.transmit
     console.log(e)
-    transmit.path=`/pages/article/detail/detail?t=share&id=${e.target.dataset.id}`
+    if (e.from === 'button'){
+      transmit.path = `/pages/article/detail/detail?t=share&id=${e.target.dataset.id}`
+      transmit.imageUrl = e.target.dataset.coverimg
+    }
+    console.log(transmit)
     return transmit
   }
 })

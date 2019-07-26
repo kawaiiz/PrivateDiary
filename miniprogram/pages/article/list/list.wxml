@@ -23,7 +23,7 @@
           <view class="card-title no-wrap f32 c-333 f-bold">{{item.title}}</view>
           <!--<view class="card-text no-wrap f28 c-999">content</view>-->
         </view>
-        <my-operation-btn-box sign="{{item.sign}}" articleId="{{item._id}}" index="{{index}}" bindsetSign="setSign" bindgotoEdit="gotoEdit"></my-operation-btn-box>
+        <my-operation-btn-box sign="{{item.sign}}" articleId="{{item._id}}" coverImg="{{item.cover_img}}" index="{{index}}" bindsetSign="setSign" bindgotoEdit="gotoEdit"></my-operation-btn-box>
       </view>
     </view>
     <view class="card card-2 mb-2 add-position" wx:else>
@@ -33,11 +33,11 @@
       <image class="card-mood" src="{{imageURL}}dl.png" wx:elif="{{item.mood===3}}"></image>
       <image class="card-mood" src="{{imageURL}}js.png" wx:elif="{{item.mood===4}}"></image>
       <image class="card-mood" src="{{imageURL}}yb.png" wx:elif="{{item.mood===5}}"></image>
-      <view class="card-text-box add-position box box-col-center-start">
+      <view class="card-text-box add-position box box-col-center-start"  bindtap="gotoDetail" data-id="{{item._id}}">
         <view class="title no-wrap f32 c-333 f-bold">{{item.title}}</view>
         <!--<view class="content no-wrap f28 c-999">content</view>-->
       </view>
-      <my-operation-btn-box sign="{{item.sign}}" id="{{item._id}}" index="{{index}}" bindsetSign="setSign"></my-operation-btn-box>
+      <my-operation-btn-box  sign="{{item.sign}}" articleId="{{item._id}}" coverImg="{{item.cover_img}}" index="{{index}}" bindsetSign="setSign" bindgotoEdit="gotoEdit"></my-operation-btn-box>
     </view>
   </view>
 </view>

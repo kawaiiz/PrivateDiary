@@ -5,6 +5,7 @@
     "my-xf-btn": "/public/components/xf_btn/xf_btn",
     "my-bulge-btn": "/public/components/bulge_btn/bulge_btn",
     "my-operation-btn-box": "/public/components/operation_btn_box/operation_btn_box",
+    "my-audio": "/public/components/audio/audio",
     "i-icon": "/public/plugIn/iview/icon/index"
   },
   "navigationStyle": "custom",

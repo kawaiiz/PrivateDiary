@@ -1,58 +1,64 @@
 @import '/public/css/common.wxss';
 
-.c-main{
-  color: #2475FB
+.c-main {
+  color: #2475fb;
 }
 
-.c-secondly{
-  color: #FFDA44
+.c-secondly {
+  color: #ffda44;
 }
 
-.error{
-  color: #ff5555
+.c-cyan {
+  color: #13c2c2;
 }
 
-.bg-main{
-  background-color: #2475FB
+.error {
+  color: #f55;
 }
 
-.bg-secondly{
-  background-color: #FFDA44
+.bg-main {
+  background-color: #2475fb;
 }
 
+.bg-secondly {
+  background-color: #ffda44;
+}
 
-.card{
+.bg-cyan{
+  background-color: #13c2c2
+}
+
+.card {
   border-radius: 4rpx;
-  box-shadow: 0 0 10rpx rgba(0,0,0,.3);
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.3);
 }
 
 /*悬浮按钮*/
-.xf-btn{
+
+.xf-btn {
   position: fixed;
   z-index: 10;
   right: 32rpx;
   bottom: 32rpx;
 }
 
-
 /* 输入框 */
 
-.input-line{
+.input-line {
   height: 84rpx;
   width: 100%;
   padding: 24rpx 16rpx 0;
   border-bottom: 1rpx solid #fff;
 }
 
-.input{
-  height:36rpx;
+.input {
+  height: 36rpx;
   font-size: 32rpx;
 }
 
-.error-line{
+.error-line {
   height: 44rpx;
   padding: 8rpx 0;
   font-size: 28rpx;
   line-height: 28rpx;
 }
-

@@ -15,6 +15,10 @@ Component({
     index:{
       type:Number,
       value:null
+    },
+    coverImg:{
+      type:String,
+      value:null
     }
   },
 
@@ -36,10 +40,6 @@ Component({
       });
     },
     setSign(){
-      console.log({
-        index:this.data.index,
-        id:this.data.articleId
-      })
       this.triggerEvent('setSign',{
         index:this.data.index,
         id:this.data.articleId,

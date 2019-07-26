@@ -24,7 +24,8 @@
 }
 
 .content-box{
-  padding-top: 700rpx;
+  padding-top: 740rpx;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
 }

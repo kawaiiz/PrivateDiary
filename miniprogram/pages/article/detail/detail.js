@@ -148,8 +148,10 @@ Page({
     this.setCoverImg(prevPage.data.contentList[0].value)
   },
   initSeeDetail(){
+    wx.showLoading()
     db.collection('article').doc(this.data.id).get()
       .then(res=>{
+        wx.hideLoading()
         console.log(res)
         let data = res.data
         this.setData({
@@ -210,22 +212,22 @@ Page({
   },
   onPageScroll: function (e) {
     let tempFileURL = this.data.bg
-    if (e.scrollTop > 5 && this.data.isShow) {
+    if (e.scrollTop > 10 && this.data.isShow) {
       this.setData({
         isShow: false,
         bgStyle: 'height:128rpx',
-        contentStyle: 'padding-top:328rpx',
+        contentStyle: 'padding-top:348rpx',
         moodShow:true
       })
       wx.pageScrollTo({
         scrollTop: e.scrollTop,
         duration: 300
       })
-    } else if (e.scrollTop <= 5 && !this.data.isShow) {
+    } else if (e.scrollTop <= 10 && !this.data.isShow) {
       this.setData({
         isShow: true,
         bgStyle: `background-image: url('${tempFileURL}');height:500rpx`,
-        contentStyle: 'padding-top:700rpx',
+        contentStyle: 'padding-top:740rpx',
         moodShow:false
       })
     }

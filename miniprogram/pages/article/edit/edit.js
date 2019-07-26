@@ -12,9 +12,9 @@ Page({
     pageType:'add',
     imageURL: app.globalData.imageURL,
     baseURL: app.globalData.baseURL,
-    addList: [{type: 'text', name: '文本域'}, {type: 'image', name: '图片域'}],
+    addList: [{ type: 'text', name: '文本域' }, { type: 'image', name: '图片域' }, { type: 'audio', name: '音频域' }],
     title:'',
-    contentList: [{type: 'image', value: []}, {type: 'text', value: ''}, {type: 'image', value: []}],
+    contentList: [{type: 'image', value: []}, {type: 'text', value: ''}, {type: 'image', value: []},{type:'audio',value:''}],
     swiperCurrent: 0,
     moodList: [{id:0,name:'开心'},{id:1,name:'自在'},{id:2,name:'生气'},{id:3,name:'感到寒冷'},{id:4,name:'心情低沉'},{id:5,name:'也无风来也无晴'}],
     moodIndex: 0,
@@ -73,10 +73,15 @@ Page({
         type: 'text',
         value:''
       }
-    }else {
+    }else if(v === '1'){
       tag = {
         type: 'image',
         value:[]
+      }
+    }else{
+      tag = {
+        type:'audio',
+        value: ''
       }
     }
     contentList.splice(swiperCurrent + 1, 0, tag)
@@ -86,6 +91,7 @@ Page({
       swiperCurrent:swiperCurrent+1
     })
   },
+
   // 删除某个节点
   delNode(e) {
     let contentList = this.data.contentList
