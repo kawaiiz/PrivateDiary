@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee2a4110-e620-45cd-b9e3-3218580a8f22" name="Default Changelist" comment="" />
+    <list default="true" id="ee2a4110-e620-45cd-b9e3-3218580a8f22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.json" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxss" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,17 +23,21 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+                <state relative-caret-position="352">
+                  <caret line="25" column="111" lean-forward="true" selection-start-line="25" selection-start-column="111" selection-end-line="25" selection-end-column="111" />
+                  <folding>
+                    <element signature="n#my-nav#0;n#view#0;n#view#0;n#!!top" />
+                    <element signature="n#style#0;n#textarea#0;n#block#0;n#swiper-item#0;n#block#0;n#swiper#0;n#view#1;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/miniprogram/public/utils/util.js">
+            <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="290">
-                  <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+                <state relative-caret-position="344">
+                  <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -36,15 +45,15 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+        <leaf>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="290">
-                  <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+                <state relative-caret-position="245">
+                  <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
                   <folding>
+                    <element signature="e#741#966#0" />
                     <element signature="e#2055#2797#0" />
-                    <element signature="e#2822#3005#0" />
                     <element signature="e#3028#3274#0" />
                     <element signature="e#3306#3671#0" />
                   </folding>
@@ -53,9 +62,36 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="454">
+                  <caret line="116" column="29" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="110">
+                  <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxss">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
+                <state relative-caret-position="-162">
                   <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
                 </state>
               </provider>
@@ -130,12 +166,12 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/miniprogram/public/components/animate-bg/animate-bg.wxml" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/animate-bg/animate-bg.wxss" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/xf-btn/xf-btn.js" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/operation-btn-box/operation-btn-box.json" />
@@ -153,7 +189,6 @@
         <option value="$PROJECT_DIR$/miniprogram/public/utils/http.js" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/navigator_bar/index.wxss" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/navigator_bar/index.js" />
-        <option value="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxss" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.json" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/xf_btn/xf_btn.js" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/xf_btn/xf_btn.wxss" />
@@ -170,7 +205,6 @@
         <option value="$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.wxss" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/list/list.json" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/list/list.wxml" />
-        <option value="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.js" />
         <option value="$PROJECT_DIR$/miniprogram/app.js" />
         <option value="$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.wxml" />
@@ -182,10 +216,13 @@
         <option value="$PROJECT_DIR$/miniprogram/pages/article/detail/detail.wxml" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/detail/detail.js" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/list/list.js" />
-        <option value="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxss" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js" />
         <option value="$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml" />
+        <option value="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.json" />
+        <option value="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js" />
+        <option value="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml" />
+        <option value="$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxss" />
       </list>
     </option>
   </component>
@@ -211,11 +248,6 @@
             <path>
               <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudfunctions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
               <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,6 +267,14 @@
               <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
               <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
               <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="edit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
+              <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,7 +282,15 @@
               <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
               <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="private_diary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PrivateDiary" type="462c0819:PsiDirectoryNode" />
+              <item name="miniprogram" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="up_img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,11 +308,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\69090\Desktop\kawaiiz\applets\PrivateDiary\miniprogram\public\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\69090\Desktop\kawaiiz\applets\PrivateDiary\miniprogram\public\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\github\PrivateDiary\miniprogram\public\components" />
+      <recent name="C:\Users\69090\Desktop\kawaiiz\applets\PrivateDiary\miniprogram\public\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -324,10 +373,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119381000" />
+    <option name="totallyTimeSpent" value="120179000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11169652" />
@@ -357,7 +406,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="等待textarea bug修复再上线" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miniprogram/public/plugIn/iview/icon/custom.wxss" />
     <entry file="file://$PROJECT_DIR$/miniprogram/public/plugIn/iview/icon/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="727">
@@ -390,13 +438,6 @@
     <entry file="file://$PROJECT_DIR$/miniprogram/public/components/bulge-btn/bulge-btn.wxss" />
     <entry file="file://$PROJECT_DIR$/miniprogram/public/components/bulge-btn/bulge-btn.wxml" />
     <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up-img/up-img.js" />
-    <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniprogram/public/components/xf_btn/xf_btn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -532,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniprogram/public/components/operation_btn_box/operation_btn_box.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -648,37 +682,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="90" column="44" lean-forward="true" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+        <state relative-caret-position="245">
+          <caret line="80" column="5" lean-forward="true" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
           <folding>
+            <element signature="e#741#966#0" />
             <element signature="e#2055#2797#0" />
-            <element signature="e#2822#3005#0" />
             <element signature="e#3028#3274#0" />
             <element signature="e#3306#3671#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -686,6 +699,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="116" column="29" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="25" column="111" lean-forward="true" selection-start-line="25" selection-start-column="111" selection-end-line="25" selection-end-column="111" />
+          <folding>
+            <element signature="n#my-nav#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#textarea#0;n#block#0;n#swiper-item#0;n#block#0;n#swiper#0;n#view#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram/pages/article/edit/edit.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniprogram/public/components/up_img/up_img.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>

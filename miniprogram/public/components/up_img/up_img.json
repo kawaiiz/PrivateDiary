@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-      "i-icon": "/public/plugIn/iview/icon/index"
+      "i-icon": "../../plugIn/iview/icon/index"
   }
 }
